@@ -1,0 +1,4 @@
+create a new folder inside a labels folder then name it as your first name, palitan nyo nalang yung label array sa script ng name nyo then inside your folder, 
+upload your two png files like your selfie, formal picture basta mukha nyo hehe 2 images then name 
+it as (1.png), (2.png) ganyan 
+kasi iiterate yan sa for loop for detecting whose faces detected on a live camera.
