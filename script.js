@@ -1,3 +1,5 @@
+
+
 const video = document.getElementById("video");
 
 Promise.all([
@@ -21,11 +23,11 @@ function startWebcam() {
 }
 
 function getLabeledFaceDescriptions() {
-  const labels = ["", ""];
+  const labels = ["rusty"];
   return Promise.all(
     labels.map(async (label) => {
       const descriptions = [];
-      for (let i = 1; i <= 2; i++) {
+      for (let i = 1; i <= labels.length; i++) {
         const img = await faceapi.fetchImage(`./labels/${label}/${i}.png`);
         const detections = await faceapi
           .detectSingleFace(img)
